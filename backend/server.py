@@ -89,37 +89,5 @@ def health():
 def get_tools():
     return jsonify({'tools': tools})
 
-# @app.route('/optimise-prompt', methods=['POST'])
-# def optimise_prompt():
-#     """Enhance and optimise user prompts using AI"""
-#     data = request.json
-#     prompt = data.get('prompt', '')
-#     template_type = data.get('template_type', '')
-    
-#     if not prompt:
-#         return jsonify({'error': 'No prompt provided'}), 400
-    
-#     # Simple optimisation rules (in production, use GPT API)
-#     optimised = prompt
-    
-#     # Add quality enhancers for image prompts
-#     if 'image' in template_type.lower():
-#         if 'photorealistic' not in optimised.lower():
-#             optimised += ", photorealistic, high quality, detailed"
-#         if '8K' not in optimised.upper():
-#             optimised += ", 8K resolution"
-    
-#     # Add structure for code prompts
-#     elif 'code' in template_type.lower():
-#         if 'step by step' not in optimised.lower():
-#             optimised += "\n\nPlease explain step by step."
-    
-#     return jsonify({
-#         'original': prompt,
-#         'optimised': optimised,
-#         'improvements': ['Added quality modifiers', 'Improved structure']
-#     })
-
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=7700, debug=True)
