@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const promptBuilderBtn = document.getElementById('promptBuilderBtn');
   const openPromptBuilderBtn = document.getElementById('openPromptBuilderBtn');
   const statusDiv = document.getElementById('status');
-  // const openGeneralAI = document.getElementById('openGeneralAI');
+  // const useAIBtn = document.getElementById('useAIBtn');
   
 
 
