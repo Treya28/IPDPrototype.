@@ -1,0 +1,173 @@
+{
+  "templates": [
+    {
+      "id": "image-gen",
+      "name": "Image Generation",
+      "category": "Visual",
+      "description": "Create detailed prompts for AI image generation",
+      "fields": [
+        {
+          "id": "course",
+          "label": "Faculty/Course Studying",
+          "placeholder": "e.g., computer science, humanities, law, accounting",
+          "required": true
+        },
+        {
+          "id": "year",
+          "label": "Year of Study",
+          "placeholder": "e.g., first year, masters, phd",
+          "required": true
+        },
+        {
+          "id": "subject",
+          "label": "Main Subject",
+          "placeholder": "e.g., a majestic dragon",
+          "required": true
+        },
+        {
+          "id": "style",
+          "label": "Art Style",
+          "placeholder": "e.g., digital art, oil painting, anime",
+          "required": true
+        },
+        {
+          "id": "details",
+          "label": "Additional Details",
+          "placeholder": "e.g., flying over mountains at sunset",
+          "required": false
+        },
+        {
+          "id": "quality",
+          "label": "Quality Modifiers",
+          "placeholder": "e.g., 8K, ultra detailed, photorealistic",
+          "required": false
+        }
+      ],
+      "template": "Create an image of {subject} in {style} style. {details} {quality}",
+      "example": "Create an image of a majestic dragon in digital art style. Flying over mountains at sunset with detailed scales and glowing eyes. 8K, ultra detailed, photorealistic"
+    },
+    {
+      "id": "code-explanation",
+      "name": "Code Explanation",
+      "category": "Programming",
+      "description": "Get explanations for code snippets",
+      "fields": [
+        {
+          "id": "course",
+          "label": "Faculty/Course Studying",
+          "placeholder": "e.g., computer science, humanities, law, accounting",
+          "required": true
+        },
+        {
+          "id": "year",
+          "label": "Year of Study",
+          "placeholder": "e.g., first year, masters, phd",
+          "required": true
+        },
+        {
+          "id": "language",
+          "label": "Programming Language",
+          "placeholder": "e.g., Python, JavaScript, C++",
+          "required": true
+        },
+        {
+          "id": "code",
+          "label": "Code Snippet",
+          "placeholder": "Paste your code here",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "id": "level",
+          "label": "Explanation Level",
+          "placeholder": "e.g., beginner, intermediate, expert",
+          "required": true
+        }
+      ],
+      "template": "Explain this {language} code for a {level} level developer:\n\n```{language}\n{code}\n```\n\nExplain step by step what this code does.",
+      "example": "Explain this Python code for a beginner level developer:\n\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)\n```\n\nExplain step by step what this code does."
+    },
+    {
+      "id": "content-rewrite",
+      "name": "Content Rewriting",
+      "category": "Writing",
+      "description": "Rewrite or improve existing text",
+      "fields": [
+        {
+          "id": "course",
+          "label": "Faculty/Course Studying",
+          "placeholder": "e.g., computer science, humanities, law, accounting",
+          "required": true
+        },
+        {
+          "id": "year",
+          "label": "Year of Study",
+          "placeholder": "e.g., first year, masters, phd",
+          "required": true
+        },
+        {
+          "id": "original",
+          "label": "Original Text",
+          "placeholder": "Paste the text you want to improve",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "id": "tone",
+          "label": "Desired Tone",
+          "placeholder": "e.g., professional, casual, persuasive",
+          "required": true
+        },
+        {
+          "id": "purpose",
+          "label": "Purpose",
+          "placeholder": "e.g., email, blog post, social media",
+          "required": true
+        }
+      ],
+      "template": "Rewrite this text in a {tone} tone for {purpose}:\n\n{original}\n\nMake it more engaging and effective.",
+      "example": "Rewrite this text in a professional tone for email:\n\nHey, just checking if you got my last message about the meeting tomorrow. Let me know!\n\nMake it more engaging and effective."
+    },
+    {
+      "id": "research-summary",
+      "name": "Research Summary",
+      "category": "Academic",
+      "description": "Summarise research papers or articles",
+      "fields": [
+        {
+          "id": "course",
+          "label": "Faculty/Course Studying",
+          "placeholder": "e.g., computer science, humanities, law, accounting",
+          "required": true
+        },
+        {
+          "id": "year",
+          "label": "Year of Study",
+          "placeholder": "e.g., first year, masters, phd",
+          "required": true
+        },
+        {
+          "id": "topic",
+          "label": "Research Topic",
+          "placeholder": "e.g., effects of climate change on coral reefs",
+          "required": true
+        },
+        {
+          "id": "sources",
+          "label": "Key Sources/Findings",
+          "placeholder": "List or describe the main sources",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "id": "length",
+          "label": "Summary Length",
+          "placeholder": "e.g., brief, detailed, comprehensive",
+          "required": true
+        }
+      ],
+      "template": "Summarise research on {topic}. Key findings include: {sources}. Provide a {length} summary with main conclusions.",
+      "example": "Summarise research on effects of climate change on coral reefs. Key findings include: ocean acidification, rising temperatures, and pollution. Provide a detailed summary with main conclusions."
+    }
+  ]
+}

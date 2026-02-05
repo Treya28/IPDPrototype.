@@ -1,0 +1,191 @@
+
+{
+  "tools": [
+    {
+      "id": 1,
+      "name": "ChatGPT",
+      "description": "General-purpose conversational AI for text generation, coding, and analysis.",
+      "url": "https://chat.openai.com",
+      "categories": ["writing", "analysis", "general"],
+      "tags": ["conversational", "multi-purpose", "text"]
+    },
+    {
+      "id": 2,
+      "name": "Midjourney",
+      "description": "AI image generation tool for creating artistic and realistic images.",
+      "url": "https://www.midjourney.com",
+      "categories": ["image-generation", "art", "design"],
+      "tags": ["picture", "art", "visual"]
+    },
+    {
+      "id": 3,
+      "name": "Copilot",
+      "description": "AI assistant for code completion and suggestions.",
+      "url": "https://copilot.microsoft.com",
+      "categories": ["coding", "development"],
+      "tags": ["code", "programming", "autocomplete"]
+    },
+    {
+      "id": 4,
+      "name": "Claude",
+      "description": "Advanced reasoning for complex analysis, coding, and high-accuracy text.",
+      "url": "https://claude.ai/new",
+      "categories": ["writing", "coding", "analysis", "general"],
+      "tags": ["reasoning", "multi-purpose", "programming", "code"]
+    },
+    {
+      "id": 5,
+      "name": "Consensus",
+      "description": "Provides evidence-based answers extracted from peer-reviewed papers.",
+      "url": "https://consensus.app",
+      "categories": ["academic", "research"],
+      "tags": ["scientificResearch", "evidenceBased", "literatureReview"]
+    },
+    {
+      "id": 6,
+      "name": "Deepseek",
+      "description": "Specialised in advanced maths, logic, and technical reasoning.",
+      "url": "https://www.deepseek.com/en/",
+      "categories": ["reasoning", "advanced"],
+      "tags": ["logic", "technical", "maths", "coding"]
+    },
+    {
+      "id": 7,
+      "name": "Gemini",
+      "description": "Multimodal AI assistance integrated across the Google Workspace ecosystem, capable of processing text, images, video, and audio.",
+      "url": "https://gemini.google.com/app",
+      "categories": ["GoogleWorkspace", "multimodal"],
+      "tags": ["text", "multimodal", "productivity", "video", "audio", "image"]
+    },
+    {
+      "id": 8,
+      "name": "Grammarly",
+      "description": "Corrects grammar, tone, and professional clarity across all writing for a final polish.",
+      "url": "https://www.grammarly.com",
+      "categories": ["writing", "grammar"],
+      "tags": ["grammar", "edit", "communication"]
+    },
+    {
+      "id": 9,
+      "name": "Manus",
+      "description": "Autonomous agent designed to handle complex, multi-step digital tasks with minimal guidance.",
+      "url": "https://manus.im",
+      "categories": ["complex", "autonomous"],
+      "tags": ["autonomous", "minimal", "workflow"]
+    },
+    {
+      "id": 10,
+      "name": "NotebookLM",
+      "description": "Allows you to chat with and summarise your own uploaded documents and material.",
+      "url": "https://notebooklm.google",
+      "categories": ["personalised", "knowledgeManagement"],
+      "tags": ["research", "noteTaking", "StudyAid"]
+    },
+    {
+      "id": 11,
+      "name": "Qwen",
+      "description": "High-performance multilingual model for mathematical reasoning and technical tasks, specialised in Chinese-language context.",
+      "url": "https://qwen.ai/home",
+      "categories": ["multimodal", "multilingual"],
+      "tags": ["multilingual", "maths", "chinese"]
+    },
+    {
+      "id": 12,
+      "name": "Perplexity",
+      "description": "Searches the internet to provide direct answers with source citations.",
+      "url": "https://www.perplexity.ai",
+      "categories": ["writing", "searching", "analysis", "general"],
+      "tags": ["search", "citations", "informationDiscovery"]
+    },
+    {
+      "id": 13,
+      "name": "Meta AI",
+      "description": "Social assistant for chat, news, and image generation within Meta apps.",
+      "url": "https://www.meta.ai",
+      "categories": ["social", "consumer", "meta"],
+      "tags": ["social", "chatbot", "creative"]
+    },
+    {
+      "id": 14,
+      "name": "Quillbot",
+      "description": "Paraphrases and rewrites text to improve fluency and change tone.",
+      "url": "https://quillbot.com",
+      "categories": ["writing", "summarising"],
+      "tags": ["paraphrasing", "rewriting", "academic", "plagiarism"]
+    },
+    {
+      "id": 15,
+      "name": "Suno",
+      "description": "AI music generator that creates full songs (including lyrics and vocals) from simple text prompts.",
+      "url": "https://suno.com/home",
+      "categories": ["audio"],
+      "tags": ["music", "creativity", "song"]
+    },
+    {
+      "id": 16,
+      "name": "Turbo AI",
+      "description": "Converts lectures, videos, and PDFs into study notes and flashcards.",
+      "url": "https://www.turbo.ai",
+      "categories": ["educational", "learn"],
+      "tags": ["studyMaterial", "flashcards", "learning"]
+    },
+    {
+      "id": 17,
+      "name": "Blackbox AI",
+      "description": "A coding assistant focused on rapid code generation, documentation, and answering technical questions directly in the IDE.",
+      "url": "https://www.blackbox.ai",
+      "categories": ["code", "ide"],
+      "tags": ["programming", "development", "tool", "generation", "ide"]
+    },
+    {
+      "id": 18,
+      "name": "Tutorly AI",
+      "description": "Provides students with homework, essay drafting, and step-by-step problem-solving.",
+      "url": "https://tutorly.ai",
+      "categories": ["tutoring", "educational"],
+      "tags": ["homework", "education", "studentSupport"]
+    },
+    {
+      "id": 19,
+      "name": "Lovable",
+      "description": "An AI app builder that generates real, editable code from natural language descriptions.",
+      "url": "https://lovable.dev/?utm_device=c&utm_source=google&utm_medium=paid_search_branded&utm_campaign=google-europe-b2c-prospecting-evergreen-subscription-XE+-+Search+-+Lovable+-+CORE&campaignid=23078175983&gad_source=1&gad_campaignid=23078175983&gbraid=0AAAAA-iIxGf_5e8vpjXP4tKXakhh1tHIF&gclid=Cj0KCQiAyvHLBhDlARIsAHxl6xr8dNy1crvh8ePKzqNJr7Eo7ud9uKeDdYDhwCfjNJ8Sw1mikxEwCMcaAqKqEALw_wcB",
+      "categories": ["application", "website"],
+      "tags": ["appBuilder", "webDevelopment", "build", "low-code"]
+    },
+    {
+      "id": 20,
+      "name": "Elicit",
+      "description": "Automates literature reviews and data extraction from academic documents.",
+      "url": "https://elicit.com",
+      "categories": ["academic", "research"],
+      "tags": ["literatureReview", "papers", "dataExtraction"]
+    },
+    {
+      "id": 21,
+      "name": "Cursor",
+      "description": "An AI-native code editor (forked from VS Code) that integrates LLMs directly into the coding workflow for refactoring and refinement.",
+      "url": "https://cursor.com",
+      "categories": ["code", "ide"],
+      "tags": ["coding", "development", "programming"]
+    },
+    {
+      "id": 22,
+      "name": "Lumen AI",
+      "description": "Converts text, blogs, and articles into social media marketing videos.",
+      "url": "https://lumenai.eucloid.com",
+      "categories": ["data", "analytics"],
+      "tags": ["python", "exploration", "visualisation"]
+    },
+    {
+      "id": 23,
+      "name": "Grok",
+      "description": "AI integrated into X (Twitter), featuring real-time access to social media trends and a witty, rebellious personality.",
+      "url": "https://grok.com",
+      "categories": ["search", "X"],
+      "tags": ["socialMedia", "personality", "trends"]
+    }
+
+  
+  ]
+}

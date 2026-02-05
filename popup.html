@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    
+    <!-- Tool Recommender Display -->
+     <div id="mainView">
+    <h1>AI Tool Recommender</h1>
+    
+    <!-- Task Input -->
+    <div class="section">
+      <label for="taskInput">Describe your task:</label>
+      <textarea id="taskInput" placeholder="e.g.: 'I need to generate an image of a house...'"></textarea>
+      <button id="findToolBtn">Find Best AI Tool</button>
+    </div>
+
+    <!-- Status Messages -->
+    <div id="status" class="status"></div>
+
+    <!-- Recommended Tool Display -->
+    <div id="recommendationSection" class="hidden">
+      <h2>Recommended Tool:</h2>
+      <div id="toolCard" class="tool-card">
+        <h4 id="toolName"></h4>
+        <p id="toolDescription"></p>
+        <div class="actions">
+          <button id="useToolBtn" class="useTool">Use This Tool</button>
+          <button id="promptBuilderBtn" class="promptBuilder">Build Prompt</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- General AI Tool (Fallback) -->
+    <div id="generalToolSection" class="hidden">
+      <p>No specialised tool found. Using General AI:</p>
+      <div class="actions">
+      <button id="promptBuilderBtn" class="promptBuilder">Build Prompt</button>
+      </div>
+    </div>
+
+   
+    <!-- Prompt Builder Display -->
+    <div id="promptBuilderSection" class="hidden">
+      <div class="prompt-builder-header">
+        <h1>Prompt Builder</h1>
+        <button id="closePromptBuilder" class="closeBtn">✕</button>
+      </div>
+
+
+              <!-- Template Selection -->
+        <div id="templateSelection" class="template-section">
+          <p>Select a prompt template:</p>
+          <div class="template-options">
+            <div class="template-option" data-template="detailed">
+              <h5>Detailed Instruction</h5>
+              <p>For complex tasks requiring specific details</p>
+            </div>
+            <div class="template-option" data-template="creative">
+              <h5>Creative Generation</h5>
+              <p>For artistic, writing, or creative tasks</p>
+            </div>
+            <div class="template-option" data-template="technical">
+              <h5>Technical/Code</h5>
+              <p>For programming, analysis, or technical tasks</p>
+            </div>
+            <div class="template-option" data-template="simple">
+              <h5>Simple Request</h5>
+              <p>For straightforward tasks</p>
+            </div>
+          </div>
+          <div class="actions">
+            <button id="skipTemplateBtn" class="promptBuilder">Skip Prompt Builder (Open General AI)</button>
+          </div>
+        </div>
+        
+        <!-- Template Form (hidden initially) -->
+        <div id="templateForm" class="hidden template-section">
+          <h5 id="templateTitle"></h5>
+          <p id="templateDescription" class="description"></p>
+          
+          <div class="form-fields" id="templateFields">
+            <!-- Fields will be dynamically inserted here -->
+          </div>
+          
+          <div class="actions">
+            <button id="generatePromptBtn" class="useTool">Generate Optimised Prompt</button>
+            <button id="backToTemplatesBtn" class="promptBuilder">Back to Templates</button>
+          </div>
+        </div>
+        
+        <!-- Generated Prompt Display (hidden initially) -->
+        <div id="generatedPromptSection" class="hidden template-section">
+          <h5>Optimised Prompt:</h5>
+          <div class="prompt-display" id="finalPrompt"></div>
+          
+          <div class="prompt-actions">
+            <button id="copyPromptBtn" class="useTool">Copy Prompt</button>
+            <button id="editPromptBtn" class="promptBuilder">Edit</button>
+            <!-- <button id="useAIBtn" class="secondary">Use in AI Tool</button> -->
+          </div>
+          
+          <div id="copyStatus" class="status small"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- General AI Tool Section -->
+    <div id="generalToolSection" class="hidden">
+      <p>No specialized tool found. Using General AI...</p>
+      <div class="actions">
+        <button id="useGeneralBtn" class="primary">Use General AI</button>
+      </div>
+    </div>
+
+
+  
+  </div>
+  <script src="popup.js"></script>
+
+</body>
+</html>

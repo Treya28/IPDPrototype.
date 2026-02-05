@@ -1,0 +1,53 @@
+# Minimal .gitignore for AI Tool Recommender
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.python-version
+
+# Node/JavaScript
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Chrome extension builds
+*.crx
+*.pem
+
+# Logs
+*.log
+
+# Local configs
+.env
+config.local.json
+
+# Add these to either version above:
+
+# Generated icons (if you regenerate them)
+icon*.png
+!icon.png  # Keep base icon if you have one
+
+# Backend runtime files
+backend/instance/
+backend/*.db
+
+# Test profiles
+test-chrome-profile/
+
+# Python virtual environment (already covered, but emphasized)
+backend/venv/
+
+# Flask secret keys
+SECRET_KEY.txt
+.flaskenv
+
+
+
+
